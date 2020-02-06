@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int n,x,y,Q,i,sum;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++)
+        scanf("%d",&arr[i]);
+    scanf("%d",&Q);
+    while(Q--)
+    {
+        sum=0;
+        scanf("%d%d",&x,&y);
+        for(i=x;i<=y;i++)
+            sum+=arr[i];
+        printf("%d\n",sum);
+    }
+}
